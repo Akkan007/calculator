@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// 1. เพิ่ม Prototype สำหรับการคูณ
 int add(int a, int b);
 int sub(int a, int b);
 int mul(int a, int b); 
@@ -9,7 +8,6 @@ int main() {
     int num1, num2, result;
     char op;
 
-    // ปรับข้อความแนะนำเล็กน้อย
     printf("simple Calculator (+ , - , *)\n");
     printf("enter first num: ");
     scanf("%d", &num1);
@@ -39,7 +37,14 @@ int main() {
     return 0;
 }
 
-int mul(int a, int b)
-{
+int add(int a, int b) {
+    return a + b;
+}
+
+int sub(int a, int b) {
+    return a - b;
+}
+
+int mul(int a, int b) {
     return a * b;
 }
